@@ -3,10 +3,10 @@
 /**
  * Contao Open Source CMS
  *
- * Copyright (c) 2005-2014 Leo Feyer
+ * Copyright (c) sr-tag.de Sven Rhinow Webentwicklung
  *
- * @package Calendar
- * @link    https://contao.org
+ * @package recurring_element
+ * @link    https://www.sr-tag.de
  * @license http://www.gnu.org/licenses/lgpl-3.0.html LGPL
  */
 

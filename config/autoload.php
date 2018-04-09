@@ -3,11 +3,9 @@
 /**
  * Contao Open Source CMS
  *
- * Copyright (c) 2005-2014 Leo Feyer
+ * Copyright (c) 2005-2018 Leo Feyer
  *
- * @package Recurring_element
- * @link    https://contao.org
- * @license http://www.gnu.org/licenses/lgpl-3.0.html LGPL
+ * @license LGPL-3.0+
  */
 
 
@@ -16,7 +14,7 @@
  */
 ClassLoader::addNamespaces(array
 (
-	'SvenRhinow',
+	'Srhinow',
 ));
 
 
@@ -26,7 +24,7 @@ ClassLoader::addNamespaces(array
 ClassLoader::addClasses(array
 (
 	// Module
-	'SvenRhinow\recurring_element\ModuleCurrentItem' => 'system/modules/recurring_element/module/ModuleCurrentItem.php',
+	'Srhinow\recurringElement\ModuleCurrentItem' => 'system/modules/recurring_element/module/ModuleCurrentItem.php',
 ));
 
 

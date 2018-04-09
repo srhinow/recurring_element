@@ -55,8 +55,8 @@ $GLOBALS['TL_DCA']['tl_recurring_element_items'] = array
 		'sorting' => array
 		(
 			'mode'                    => 4,
-			'fields'                  => array('startTime DESC'),
-			'headerFields'            => array('title', 'tstamp', 'image'),
+			'fields'                  => array('title'),
+			'headerFields'            => array('title','tstamp'),
 			'panelLayout'             => 'filter;sort,search,limit',
 			'child_record_callback'   => array('tl_recurring_element_items', 'listEvents'),
 			'child_record_class'      => 'no_padding'
@@ -118,7 +118,7 @@ $GLOBALS['TL_DCA']['tl_recurring_element_items'] = array
 	'palettes' => array
 	(
 		'__selector__'                => array('addImageSettings','addText', 'recurring'),
-		'default'                     => '{title_legend},title,author;{image_legend},addImageSettings;{text_legend},addText;{date_legend},startDate,endDate;{recurring_legend},recurring;{expert_legend:hide},priority,cssClass;{publish_legend},published,start,stop'
+		'default'                     => '{basic_legend},title,author;{image_legend},addImageSettings;{text_legend},addText;{date_legend},startDate,endDate;{recurring_legend},recurring;{expert_legend:hide},priority,cssClass,published'
 	),
 
 	// Subpalettes
@@ -229,7 +229,7 @@ $GLOBALS['TL_DCA']['tl_recurring_element_items'] = array
 		),
 		'addText' => array
 		(
-			'label'                   => &$GLOBALS['TL_LANG']['tl_recurring_element_items']['addImage'],
+			'label'                   => &$GLOBALS['TL_LANG']['tl_recurring_element_items']['addText'],
 			'exclude'                 => true,
 			'inputType'               => 'checkbox',
 			'eval'                    => array('submitOnChange'=>true),
@@ -247,7 +247,7 @@ $GLOBALS['TL_DCA']['tl_recurring_element_items'] = array
 		),
 		'text' => array
 		(
-			'label'                   => &$GLOBALS['TL_LANG']['tl_recurring_element_items']['teaser'],
+			'label'                   => &$GLOBALS['TL_LANG']['tl_recurring_element_items']['text'],
 			'exclude'                 => true,
 			'search'                  => true,
 			'inputType'               => 'textarea',
@@ -354,7 +354,7 @@ $GLOBALS['TL_DCA']['tl_recurring_element_items'] = array
 			'exclude'                 => true,
 			'inputType'               => 'timePeriod',
 			'options'                 => array('days', 'weeks', 'months', 'years'),
-			'reference'               => &$GLOBALS['TL_LANG']['tl_recurring_element_items'],
+			'reference'               => &$GLOBALS['TL_LANG']['tl_recurring_element_items']['repeatEach_options'],
 			'eval'                    => array('mandatory'=>true, 'rgxp'=>'digit', 'tl_class'=>'w50'),
 			'save_callback' => array
 			(
