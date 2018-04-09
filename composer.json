@@ -1,9 +1,9 @@
 {
   "name": "srhinow/recurring_element",
   "description": "Hier kann man wiederkehrende Elemente für das Contao CMS verwalten. Damit lassen sich z.B. Hintergrundbilder für alle Jahreszeiten einstellen, oder für jeden Wochentag etwas anderes anzeigen..",
-  "keywords": ["contao", "wiederkehrend", "reccuring","Image","loop"],
+  "keywords": ["contao", "wiederkehrend", "recurring","Image","loop"],
   "type": "contao-module",
-  "homepage": "https://github.com/srhinow/reccuring_element",
+  "homepage": "https://github.com/srhinow/recurring_element",
   "license": "GPL-3.0+",
   "authors":[
     {
@@ -14,8 +14,8 @@
   ],
   "support":{
     "email": "kservice@sr-tag.de",
-    "issues":"https://github.com/srhinow/reccuring_element/issues",
-    "source":"https://github.com/srhinow/reccuring_element"
+    "issues":"https://github.com/srhinow/recurring_element/issues",
+    "source":"https://github.com/srhinow/recurring_element"
   },
   "require": {
     "php": ">=5.6",
@@ -23,13 +23,12 @@
     "contao-community-alliance/composer-plugin":"~2.4 || ~3.0"
   },
   "replace": {
-    "contao-legacy/srlayer": "self.version",
-    "contao-legacy/campainLayer": "self.version"
+    "contao-legacy/reccuring_element": "self.version",
   },
   "extra": {
     "contao": {
       "sources": {
-        "": "system/modules/reccuring_element"
+        "": "system/modules/recurring_element"
       }
     }
   }
