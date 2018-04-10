@@ -406,24 +406,8 @@ $GLOBALS['TL_DCA']['tl_recurring_element_items'] = array
 			'filter'                  => true,
 			'flag'                    => 2,
 			'inputType'               => 'checkbox',
-			'eval'                    => array('doNotCopy'=>true),
+			'eval'                    => array('doNotCopy'=>true,'tl_class'=>'clr'),
 			'sql'                     => "char(1) NOT NULL default ''"
-		),
-		'start' => array
-		(
-			'label'                   => &$GLOBALS['TL_LANG']['tl_recurring_element_items']['start'],
-			'exclude'                 => true,
-			'inputType'               => 'text',
-			'eval'                    => array('rgxp'=>'datim', 'datepicker'=>true, 'tl_class'=>'w50 wizard'),
-			'sql'                     => "varchar(10) NOT NULL default ''"
-		),
-		'stop' => array
-		(
-			'label'                   => &$GLOBALS['TL_LANG']['tl_recurring_element_items']['stop'],
-			'exclude'                 => true,
-			'inputType'               => 'text',
-			'eval'                    => array('rgxp'=>'datim', 'datepicker'=>true, 'tl_class'=>'w50 wizard'),
-			'sql'                     => "varchar(10) NOT NULL default ''"
 		)
 	)
 );

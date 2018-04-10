@@ -105,7 +105,7 @@ $GLOBALS['TL_DCA']['tl_recurring_element'] = array
 	// Palettes
 	'palettes' => array
 	(
-		'default'                     => '{title_legend},title'
+		'default'                     => 'title'
 	),
 
 	// Fields
